@@ -31,8 +31,9 @@ class get_html(object):
         self.get_list()
         List=self.strlist
         number=0
+        if not os.path.exists("download_pic/"):
         os.mkdir("download_pic/")
-        for i in List:
+        for i in range(504,505):
             os.mkdir("download_pic/"+self.heroname[number]+"/")
             for num in range(15):#真的会有英雄有14个皮肤吗
                 num+=1
