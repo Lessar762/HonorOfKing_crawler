@@ -46,12 +46,8 @@ class get_html(object):
                 except urllib.error.HTTPError:
                     print(self.heroname[number]+"Successfully download!")
                     number+=1 
-                    return
+                    break
             
-    
-  
-                
-        
 #downloadurl=https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/508/508-bigskin-1.jpg|先代码审计找到一条例子
 head_google="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"    
 URLL="https://pvp.qq.com/web201605/herolist.shtml"
